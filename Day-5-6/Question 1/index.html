@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 Day 5-6</title>
+    <style>
+        table{
+            border: 2px solid salmon;
+        }
+       table th {
+           width: 100px;
+           border: 2px solid salmon;
+       }
+       form input{
+            margin: 2rem;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Question 1</h1>
+    </div>
+    <form action="">
+        <label for="name"></label>
+        <input type="text" placeholder="Search here.." name="name" id="searchname" onkeyup="searchByName()">
+    </form>
+
+    <table class="tdata">
+        <thead>
+            <tr>
+                <th>
+                    Sr No.
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    City
+                </th>
+                <th> 
+                    Salary
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    <script src="Script.js"></script>
+</body>
+</html>
