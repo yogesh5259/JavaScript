@@ -5,13 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question 2 Day 5-6</title>
     <style>
-       
+        table{
+            border: 2px solid salmon;
+        }
+       table th {
+           width: 100px;
+           border: 2px solid salmon;
+           text-align: center;
+       }
+       form input{
+            margin: 1rem;
+       }
+       .submit{
+           margin: 1rem;
+           padding: 0.5rem;
+           border: 2px solid red;
+           display: inline-block;
+           align-items: center;
+           cursor: pointer;
+           border-radius: 40px;
+       }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Question 2</h1>
     </div>
+    <form action="">
+        <label for="Source"></label>
+        <input type="text" placeholder="Search by source and destination" name="source" id="searchsource" onkeyup="searchBysource()">
+    </form>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Bus name" name="name" id="name">
+        <label for="source">Source:</label>
+        <input type="text" placeholder="Bus name" name="source" id="source">
+        <label for="destination">Destination:</label>
+        <input type="text" placeholder="Bus name" name="destination" id="destination">
+        <label for="number">Number:</label>
+        <input type="text" placeholder="Bus name" name="number" id="number">
+        <label for="capacity">Capacity:</label>
+        <input type="text" placeholder="Bus name" name="capacity" id="capacity">
+        <div class="submit" onclick="addbuses(event)"> Submit</div>
+    </form>
+
+    <table class="tdata">
+        <thead>
+            <tr>
+                <th>
+                    Sr No.
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Source
+                </th>
+                <th>
+                    Destination
+                </th>
+                <th> 
+                    Number
+                </th>
+                <th>
+                    Capacity
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
     <script src="Script.js"></script>
 </body>
 </html>
